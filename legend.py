@@ -2,12 +2,6 @@ import base64
 import os
 import sys
 
-# if sys.argv[1] == "crypt":
-#     print(sys.argv[2])
-# elif sys.argv[1] == "decrypt":
-#     print("siuu",sys.argv[2])
-
-
 if (sys.argv[1] != "crypt") and (sys.argv[1] != 'decrypt'):
     sys.exit("[ERROR] First arg err")
 else:
@@ -25,10 +19,3 @@ else:
             print("Decrypting...")
             print(result.decode("ascii"))
 
-# SGVsbG9Xb3JsZA==
-# text = sys.argv[1]
-# print(base64.b64encode(text.encode("ascii")))
-#
-# text = sys.argv[1]
-# itog = base64.b64decode(text.encode("ascii"))
-# print(itog.decode('ascii'))
